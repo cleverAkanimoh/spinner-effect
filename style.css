@@ -2,6 +2,7 @@
   height: 100vh;
   overflow: hidden;
   position: relative;
+  padding: 0 1rem;
 }
 
 .banner .product {
@@ -10,17 +11,16 @@
   max-width: 400px;
   height: 400px;
   position: absolute;
-  bottom: 70px;
+  bottom: 50%;
   left: 50%;
-  transform: translateX(-50%);
+  translate: -50% 50%;
   z-index: 1;
   transition: 0.7s;
 }
 
 .banner .product .soda {
-  background: url(/soda_can.png);
+  background: url(/bg.jpg), url(/soda_can.png);
   background-size: auto 100%;
   width: 220px;
-  /* height: 400px; */
   aspect-ratio: 2/4;
 }
