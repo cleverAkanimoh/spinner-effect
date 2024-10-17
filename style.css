@@ -29,7 +29,7 @@
   background: var(--url) var(--left) 0, url(/soda_can.png);
   background-size: auto 100%;
   width: 220px;
-  aspect-ratio: 2/4;
+  aspect-ratio: 1.99/4;
   background-blend-mode: multiply;
   mask-image: url(/soda_can.png);
   mask-size: auto 100%;
@@ -41,7 +41,7 @@
 
 .banner .product:hover {
   --left: -100px;
-  translate: -50% 120px;
+  translate: -50% 150px;
 }
 
 .banner .product .soda:last-of-type {
