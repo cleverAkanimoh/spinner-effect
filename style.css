@@ -40,7 +40,7 @@
 
 .banner .product:hover {
   --left: -100px;
-  translate: -50% 150px;
+  translate: -50% 120px;
 }
 
 .banner .product .soda:last-of-type {
