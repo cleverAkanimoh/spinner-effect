@@ -1,3 +1,9 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 .banner {
   height: 100vh;
   overflow: hidden;
@@ -7,8 +13,6 @@
 
 .banner .product {
   /* background-color: red; */
-  width: 100%;
-  max-width: 400px;
   height: 400px;
   position: absolute;
   bottom: 50%;
@@ -16,11 +20,46 @@
   translate: -50% 50%;
   z-index: 1;
   transition: 0.7s;
+  cursor: pointer;
+  --left: 1220px;
+  display: flex;
 }
 
 .banner .product .soda {
-  background: url(/bg.jpg), url(/soda_can.png);
+  background: var(--url) var(--left) 0, url(/soda_can.png);
   background-size: auto 100%;
   width: 220px;
   aspect-ratio: 2/4;
+  background-blend-mode: multiply;
+  mask-image: url(/soda_can.png);
+  mask-size: auto 100%;
+  transition: 0.7s;
+  position: absolute;
+  left: 50%;
+  translate: -50% 0;
+}
+
+.banner .product:hover {
+  --left: -100px;
+  translate: -50% 120px;
+}
+
+.banner .product .soda:last-of-type {
+  opacity: 0;
+}
+
+.banner .product:hover .soda:last-of-type {
+  opacity: 1;
+}
+
+.banner .rock {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.7s;
+}
+
+.product:hover ~ .rock {
+  scale: 1.125;
 }
