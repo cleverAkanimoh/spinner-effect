@@ -25,12 +25,12 @@
 }
 
 .banner .product .soda {
-  background: var(--url) var(--left) 0, url(soda_can.png);
+  background: var(--url) var(--left) 0, url(./soda_can.png);
   background-size: auto 100%;
   width: 220px;
   aspect-ratio: 1.99/4;
   background-blend-mode: multiply;
-  mask-image: url(soda_can.png);
+  mask-image: url(./soda_can.png);
   mask-size: auto 100%;
   transition: 0.7s;
   position: absolute;
